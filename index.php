@@ -38,15 +38,15 @@
             </div>
 
             <div class="row">
-                <div class="col-md-2">
+                <div class="col-md-4">
                     <div class="card glassPanel border-light rcAll">
                         <div class="card-header glassPanel text-white rcTop">NFT Projects</div>
                         <div class="card-body">
                             <div class="container">
                                 <div class="row">
                                     <div class="col text-left">
-                                      <button type="button" class="btn btn-primary btn-lg btn-block">CUR Fractional NFTs</button>
-                                      <button type="button" class="btn btn-primary btn-lg btn-block">CMD Titles</button>
+                                      <button type="button" class="btn btn-dark btn-sm btn-block">CUR Fractional NFTs</button>
+                                      <button type="button" class="btn btn-dark btn-sm btn-block">CMD Titles</button>
                                     </div>
                                 </div>
                             </div>
@@ -55,7 +55,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-10">
+                <div class="col-md-8">
                     <div class="card glassPanel border-light rcAll">
                         <div class="card-header glassPanel text-white rcTop">Your Collection</div>
                         <div class="card-body">
