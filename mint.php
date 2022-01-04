@@ -81,6 +81,9 @@
                                           <small id="addressHelp" class="form-text text-muted">The initial fractions generated will be sent to this address.</small>
                                         </div>
                                       </div>
+                                      <div class = "col-md-12">
+                                        <img src = "https://unsplash.com/photos/QMDap1TAu0g"/>
+                                      </div>
                                     </div>
                                         <div class="form-check">
                                           <input type="checkbox" class="form-check-input" id="exampleCheck1">
