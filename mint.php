@@ -82,7 +82,7 @@
                                         </div>
                                       </div>
                                       <div class = "col-md-4">
-                                        <img src = "https://images.unsplash.com/photo-1487088678257-3a541e6e3922?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3774&q=80" width = "200"/>
+                                        <img src = "https://images.unsplash.com/photo-1487088678257-3a541e6e3922?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3774&q=80" width = "200" />
                                       </div>
                                     </div>
                                     <div class="form-check">
