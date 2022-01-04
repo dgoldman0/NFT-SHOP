@@ -63,7 +63,7 @@
                                 <div class="row">
                                   <form>
                                     <div class = "form-row">
-                                      <div class = "col-md-12">
+                                      <div class = "col-md-8">
                                         <div class="form-group" id = "CUR-BACK">
                                           <label for="initial_backing ">Initial CUR Backing</label>
                                           <input type="text" class="form-control" id="initial_backing" aria-describedby="backHelp" placeholder="CUR Backing">
@@ -81,7 +81,7 @@
                                           <small id="addressHelp" class="form-text text-muted">The initial fractions generated will be sent to this address.</small>
                                         </div>
                                       </div>
-                                      <div class = "col-md-11">
+                                      <div class = "col-md-4">
                                         <img src = "https://unsplash.com/photos/QMDap1TAu0g"/>
                                       </div>
                                     </div>
