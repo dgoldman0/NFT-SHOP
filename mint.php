@@ -63,7 +63,7 @@
                                 <div class="row">
                                   <form>
                                     <div class = "form-row">
-                                      <div class = "col-md-6">
+                                      <div class = "col-md-12">
                                         <div class="form-group" id = "CUR-BACK">
                                           <label for="initial_backing ">Initial CUR Backing</label>
                                           <input type="text" class="form-control" id="initial_backing" aria-describedby="backHelp" placeholder="CUR Backing">
