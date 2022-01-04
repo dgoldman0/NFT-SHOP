@@ -13,6 +13,7 @@
                         <a class="dropdown-item text-white" href="https://nolex.org/main/WRLDTRX.html?ref=5f27039c6766fa6f943137be"> WRLD on NoleX</a>
                     </div>
                 </li>
+                <li class="nav-item"><a class="nav-link" href="index.php"><i class="fas fa-fire-alt text-white"></i> Collection</a></li>
                 <li class="nav-item"><a class="nav-link" href="mint.php"><i class="fas fa-fire-alt text-white"></i> Mint NFT</a></li>
             </ul>
 
