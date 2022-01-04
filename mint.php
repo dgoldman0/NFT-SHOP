@@ -62,27 +62,31 @@
                             <div class="container">
                                 <div class="row">
                                   <form>
-                                    <div class="form-group" id = "CUR-BACK">
-                                      <label for="initial_backing ">Initial CUR Backing</label>
-                                      <input type="text" class="form-control" id="initial_backing" aria-describedby="backHelp" placeholder="CUR Backing">
-                                      <small id="backHelp" class="form-text text-muted">The amount of CUR to initially back the NFT (minimum of x CUR).</small>
+                                    <div class = "form-row">
+                                      <div class = "col-md-6">
+                                        <div class="form-group" id = "CUR-BACK">
+                                          <label for="initial_backing ">Initial CUR Backing</label>
+                                          <input type="text" class="form-control" id="initial_backing" aria-describedby="backHelp" placeholder="CUR Backing">
+                                          <small id="backHelp" class="form-text text-muted">The amount of CUR to initially back the NFT (minimum of x CUR).</small>
+                                        </div>
+                                        <div class="form-group" id = "CUR-FRAC">
+                                          <label for="initial_fractions">Initial Fractions</label>
+                                          <input type="text" class="form-control" id="initial_fractions" aria-describedby="fracHelp" placeholder="Number of Initial Fractions">
+                                          <small id="fracHelp" class="form-text text-muted">The initial fractions will be distributed upon creation.</small>
+                                        </div>
+                                        <div class="form-group" id = "CUR-TO">
+                                          <label for="initial_fractions">Receiver Address</label>
+                                          <!-- Could replace the placeholder text with address found in tronweb -->
+                                          <input type="text" class="form-control" id="receiver_address" aria-describedby="addressHelp" placeholder="TRON Address to Receive Tokens">
+                                          <small id="addressHelp" class="form-text text-muted">The initial fractions generated will be sent to this address.</small>
+                                        </div>
+                                      </div>
                                     </div>
-                                    <div class="form-group" id = "CUR-FRAC">
-                                      <label for="initial_fractions">Initial Fractions</label>
-                                      <input type="text" class="form-control" id="initial_fractions" aria-describedby="fracHelp" placeholder="Number of Initial Fractions">
-                                      <small id="fracHelp" class="form-text text-muted">The initial fractions will be distributed upon creation.</small>
-                                    </div>
-                                    <div class="form-group" id = "CUR-TO">
-                                      <label for="initial_fractions">Receiver Address</label>
-                                      <!-- Could replace the placeholder text with address found in tronweb -->
-                                      <input type="text" class="form-control" id="receiver_address" aria-describedby="addressHelp" placeholder="TRON Address to Receive Tokens">
-                                      <small id="addressHelp" class="form-text text-muted">The initial fractions generated will be sent to this address.</small>
-                                    </div>
-                                    <div class="form-check">
-                                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                      <label class="form-check-label" for="exampleCheck1">I agree to all <a href = "terms.php">terms and conditions</a>.</label>
-                                    </div>
-                                    <button type="submit" class="btn btn-primary">Create NFT</button>
+                                        <div class="form-check">
+                                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                          <label class="form-check-label" for="exampleCheck1">I agree to all <a href = "terms.php">terms and conditions</a>.</label>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Create NFT</button>
                                   </form>
                                 </div>
                             </div>
