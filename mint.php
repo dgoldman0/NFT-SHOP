@@ -81,15 +81,15 @@
                                           <small id="addressHelp" class="form-text text-muted">The initial fractions generated will be sent to this address.</small>
                                         </div>
                                       </div>
-                                      <div class = "col-md-12">
+                                      <div class = "col-md-11">
                                         <img src = "https://unsplash.com/photos/QMDap1TAu0g"/>
                                       </div>
                                     </div>
-                                        <div class="form-check">
-                                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                          <label class="form-check-label" for="exampleCheck1">I agree to all <a href = "terms.php">terms and conditions</a>.</label>
-                                        </div>
-                                        <button type="submit" class="btn btn-primary">Create NFT</button>
+                                    <div class="form-check">
+                                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                      <label class="form-check-label" for="exampleCheck1">I agree to all <a href = "terms.php">terms and conditions</a>.</label>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Create NFT</button>
                                   </form>
                                 </div>
                             </div>
