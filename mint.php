@@ -63,7 +63,7 @@
                                 <div class="row">
                                   <form>
                                     <div class = "form-row">
-                                      <div class = "col-md-8">
+                                      <div class = "col-md-10">
                                         <div class="form-group" id = "CUR-BACK">
                                           <label for="initial_backing ">Initial CUR Backing</label>
                                           <input type="text" class="form-control" id="initial_backing" aria-describedby="backHelp" placeholder="CUR Backing">
@@ -81,8 +81,17 @@
                                           <small id="addressHelp" class="form-text text-muted">The initial fractions generated will be sent to this address.</small>
                                         </div>
                                       </div>
-                                      <div class = "col-md-4">
-                                        <center><img src = "https://images.unsplash.com/photo-1487088678257-3a541e6e3922?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3774&q=80" width = "200" /></center>
+                                      <div class = "col-md-2">
+                                        <div class = "form-group" id = "image">
+                                          <label for = "image_select">Select Preview</label>
+                                          <input type = "image" id = "image_select" aria-describedby = "imageHelp" src = "https://images.unsplash.com/photo-1487088678257-3a541e6e3922?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3774&q=80" width = "200" />
+                                          <small id = "imageHelp" class = "form-text text-muted">Select a preview image for the NFT</small>
+                                        </div>
+                                        <div class = "form-group" id = "media">
+                                          <label for = "media_select">Select Media</label>
+                                          <input type = "file" id = "media_select" aria-describedby = "mediaHelp" />
+                                          <small id = "mediaHelp" class = "form-text text-muted">Select the media to be certified by the NFT</small>
+                                        </div>
                                       </div>
                                     </div>
                                     <div class="form-check">
