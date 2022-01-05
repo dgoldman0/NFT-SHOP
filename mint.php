@@ -30,8 +30,8 @@
                 <div class="container">
                     <div class="row">
                         <div class="col text-left">
-                            <h1 class="text-white">NFT Marketplace</h1>
-                            <p class="text-success">Home of the World Builder NFT Ecosystem</p>
+                            <h1 class="text-white">NFT Minting System</h1>
+                            <p class="text-success">Let's Create Something New!</p>
                         </div>
                     </div>
                 </div>
@@ -61,20 +61,20 @@
                         <div class="card-body">
                             <div class="container">
                                 <div class="row">
-                                  <form>
+                                  <form id = "nft-mint">
                                     <div class = "form-row">
                                       <div class = "col-md-8">
-                                        <div class="form-group" id = "CUR-BACK">
+                                        <div class="form-group" id = "cur-back">
                                           <label for="initial_backing ">Initial CUR Backing</label>
                                           <input type="text" class="form-control" id="initial_backing" aria-describedby="backHelp" placeholder="CUR Backing">
                                           <small id="backHelp" class="form-text text-muted">The amount of CUR to initially back the NFT (minimum of x CUR).</small>
                                         </div>
-                                        <div class="form-group" id = "CUR-FRAC">
+                                        <div class="form-group" id = "cur-frac">
                                           <label for="initial_fractions">Initial Fractions</label>
                                           <input type="text" class="form-control" id="initial_fractions" aria-describedby="fracHelp" placeholder="Number of Initial Fractions">
                                           <small id="fracHelp" class="form-text text-muted">The initial fractions will be distributed upon creation.</small>
                                         </div>
-                                        <div class="form-group" id = "CUR-TO">
+                                        <div class="form-group" id = "cur-to">
                                           <label for="initial_fractions">Receiver Address</label>
                                           <!-- Could replace the placeholder text with address found in tronweb -->
                                           <input type="text" class="form-control" id="receiver_address" aria-describedby="addressHelp" placeholder="TRON Address to Receive Tokens">
@@ -99,6 +99,8 @@
                                       <label class="form-check-label" for="exampleCheck1">I agree to all <a href = "terms.php">terms and conditions</a>.</label>
                                     </div>
                                     <button type="submit" class="btn btn-primary">Create NFT</button>
+                                  </form>
+                                  <form id = "title-mint">
                                   </form>
                                 </div>
                             </div>
