@@ -66,13 +66,17 @@
                                       <div class = "col-md-8">
                                         <div class="form-group" id = "cur-back">
                                           <label for="initial_backing ">Initial CUR Backing</label>
-                                          <input type="text" class="form-control" id="initial_backing" aria-describedby="backHelp" placeholder="CUR Backing">
-                                          <small id="backHelp" class="form-text text-muted">The amount of CUR to initially back the NFT (minimum of x CUR).</small>
+                                          <input type="text" class="form-control" id="initial_backing" aria-describedby="backHelp" placeholder="1,000 CUR minimum backing">
+                                          <small id="backHelp" class="form-text text-muted">The amount of CUR to initially back the NFT.</small>
                                         </div>
                                         <div class="form-group" id = "cur-frac">
                                           <label for="initial_fractions">Initial Fractions</label>
                                           <input type="text" class="form-control" id="initial_fractions" aria-describedby="fracHelp" placeholder="Number of Initial Fractions">
                                           <small id="fracHelp" class="form-text text-muted">The initial fractions will be distributed upon creation.</small>
+                                        </div>
+                                        <div class="form-check">
+                                          <input type="checkbox" class="form-check-input" id="moreFrac">
+                                          <label class="form-check-label" for="moreFrac">Allow more fractions.</label>
                                         </div>
                                         <div class="form-group" id = "cur-to">
                                           <label for="initial_fractions">Receiver Address</label>
@@ -85,20 +89,20 @@
                                         <div class = "form-group" id = "image">
                                           <label for = "image_select">Select Preview</label>
                                           <input type = "image" id = "image_select" aria-describedby = "imageHelp" src = "https://images.unsplash.com/photo-1487088678257-3a541e6e3922?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3774&q=80" width = "200" />
-                                          <small id = "imageHelp" class = "form-text text-muted">Select a preview image for the NFT</small>
+                                          <small id = "imageHelp" class = "form-text text-muted">Select a preview image for the NFT.</small>
                                         </div>
                                         <div class = "form-group" id = "media">
                                           <label for = "media_select">Select Media</label>
                                           <input type = "file" id = "media_select" aria-describedby = "mediaHelp" />
-                                          <small id = "mediaHelp" class = "form-text text-muted">Select the media to be certified by the NFT</small>
+                                          <small id = "mediaHelp" class = "form-text text-muted">Select the media to be certified by the NFT (if different from preview image).</small>
                                         </div>
                                       </div>
                                     </div>
                                     <div class="form-check">
-                                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                      <label class="form-check-label" for="exampleCheck1">I agree to all <a href = "terms.php">terms and conditions</a>.</label>
+                                      <input type="checkbox" class="form-check-input" id="termsCheck">
+                                      <label class="form-check-label" for="ter,sCheck">I agree to all <a href = "terms.php">terms and conditions</a>.</label>
                                     </div>
-                                    <button type="submit" class="btn btn-primary">Create NFT</button>
+                                    <button type="submit" id = "create-nft" class="btn btn-primary">Create NFT</button>
                                   </form>
                                   <form id = "title-mint">
                                   </form>
@@ -116,8 +120,7 @@
         <script src="assets/js/popper.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/tronweb.js"></script>
-        <script src="assets/js/frac_nft.js"></script>
-        <script src="assets/js/titles.js"></script>
+        <script src="assets/lib/mint.js"></script>
 
         <!-- Dapp Scripts -->
     </body>
