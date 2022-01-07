@@ -76,7 +76,7 @@
                                         </div>
                                         <div class="form-check">
                                           <input type="checkbox" class="form-check-input" id="moreFrac">
-                                          <label class="form-check-label" for="moreFrac">Allow more fractions.</label>
+                                          <label class="form-check-label text-white" for="moreFrac">Allow more fractions.</label>
                                         </div>
                                         <div class="form-group" id = "cur-to">
                                           <label for="initial_fractions">Receiver Address</label>
@@ -100,8 +100,9 @@
                                     </div>
                                     <div class="form-check">
                                       <input type="checkbox" class="form-check-input" id="termsCheck">
-                                      <label class="form-check-label" for="ter,sCheck">I agree to all <a href = "terms.php">terms and conditions</a>.</label>
+                                      <label class="form-check-label text-white" for="termsCheck">I agree to all <a href = "terms.php">terms and conditions</a>.</label>
                                     </div>
+                                    <hr/>
                                     <button type="submit" id = "create-nft" class="btn btn-primary">Create NFT</button>
                                   </form>
                                   <form id = "title-mint">
