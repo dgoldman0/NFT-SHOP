@@ -15,6 +15,16 @@ $(document).ready(function() {
 	  }
 	  return true;
 	}
+  // Choose which UI to have visible: will eventually be replaced with a dynamic function when projects can be added on the fly
+  $("#proj-select-curnft").click(function () {
+    $("#curnft-mint").show();
+    $("#cmdtitles-mint").hide();
+  });
+  $("#proj-select-cmdtitles").click(function () {
+    $("#cmdtitles-mint").show();
+    $("#curnft-mint").hide();
+  });
+
 	$("#create-nft").click(function() {
 		if (checkConnection()) {
 			var contract = window.tronWeb.contract(abi_forge, active.address);

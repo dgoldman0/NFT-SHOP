@@ -45,8 +45,8 @@
                             <div class="container">
                                 <div class="row">
                                     <div class="col text-left">
-                                      <button type="button" class="btn btn-dark btn-sm btn-block">CUR Fractional NFTs</button>
-                                      <button type="button" class="btn btn-dark btn-sm btn-block">CMD Titles</button>
+                                      <button type="button" class="btn btn-dark btn-sm btn-block" id = "proj-select-curnft">CUR Fractional NFTs</button>
+                                      <button type="button" class="btn btn-dark btn-sm btn-block" id = "proj-select-cmdtitles">CMD Titles</button>
                                     </div>
                                 </div>
                             </div>
@@ -61,7 +61,7 @@
                         <div class="card-body">
                             <div class="container">
                                 <div class="row">
-                                  <form id = "nft-mint">
+                                  <form id = "curnft-mint">
                                     <div class = "form-row">
                                       <div class = "col-md-8">
                                         <div class="form-group" id = "cur-back">
@@ -105,7 +105,7 @@
                                     <hr/>
                                     <button type="submit" id = "create-nft" class="btn btn-primary">Create NFT</button>
                                   </form>
-                                  <form id = "title-mint">
+                                  <form id = "cmdtitle-mint">
                                   </form>
                                 </div>
                             </div>
