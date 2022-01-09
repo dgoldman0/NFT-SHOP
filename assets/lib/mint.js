@@ -55,7 +55,7 @@ $(document).ready(function() {
       try {
         let nft = pull_nft_info();
         console.log(nft);
-        contract.createNFT(nft.initial_backing.toString(), nft.initial_fracs.toString(), nft.allow_fractions.toString()).send().then(function(res) {
+        contract.createNFT(nft.initial_cur, nft.initial_fracs, nft.allow_fractions).send().then(function(res) {
           console.log(res);
         });
       } catch (err) {
