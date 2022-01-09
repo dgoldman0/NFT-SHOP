@@ -18,6 +18,14 @@ function pull_nft_info() {
 }
 
 $(document).ready(function() {
+  // Prevent form submission via enter, etc.
+  $(window).keydown(function(event){
+    if(event.keyCode == 13 || event.keyCode == 32) {
+      // Will adjust to allow submission if all form elements are valid
+      event.preventDefault();
+      return false;
+    }
+  });
   function checkConnection() {
 	  if (!window.tronWeb) {
 	    return false;
