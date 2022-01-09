@@ -1,8 +1,20 @@
 // Pulls the NFT info for creation from the form and validates it
 
+var cur_nft_addr = "TFhqHsExxjeDuz931Sw8dhA9QdZEuPGe9A";
+var minimum_backing = 0;
+
 function pull_nft_info() {
-  let initial_cur = $("#initial_backing").val();
-  let initial_fracs = $("#initial_fractions").val();
+  if (!$("#termsCheck").checked) throw new Error("nft-check-tos");
+  let nft_data = [];
+  nft_data.initial_cur = Number($("#initial_backing").val());
+  if (!nft.initial_cur.isInteger()) throw new Error("nft-backing-notint");
+  if (nft_data.initial_cur < minimum_backing) throw new Error("nft-insufficient-backing");
+  nft_data.initial_fracs = Number($("#initial_fractions").val());
+  if (!nft_data.initial_fracs.isInteger()) throw new Error("nft-fractions-notint");
+  if (nft_data.initial_fracs < 0) throw new Error("nft-fractions-negative");
+  nft_data.allow_fractions = $("#moreFrac");
+  // Still have to handle media stuff
+  return nft_data;
 }
 
 $(document).ready(function() {
@@ -27,9 +39,12 @@ $(document).ready(function() {
 
 	$("#create-nft").click(function() {
 		if (checkConnection()) {
-			var contract = window.tronWeb.contract(abi_forge, active.address);
+			var contract = window.tronWeb.contract(cur_nft_abi, cur_nft_addr);
       try {
-
+        let nft = pull_nft_info();
+        contract.createNFT(nft.initial_backing, nft.initial_fracs, nft.allow_fractions).call().then(function(res) {
+          
+        });
       } catch (err) {
 
       }
