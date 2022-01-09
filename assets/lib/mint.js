@@ -43,8 +43,10 @@ $(document).ready(function() {
 	$("#create-nft").click(function() {
 		if (checkConnection()) {
 			var contract = window.tronWeb.contract(cur_nft_abi, cur_nft_addr);
+      console.log("Creating NFT");
       try {
         let nft = pull_nft_info();
+        console.log(nft);
         contract.createNFT(nft.initial_backing, nft.initial_fracs, nft.allow_fractions).call().then(function(res) {
           console.log(res);
         });
