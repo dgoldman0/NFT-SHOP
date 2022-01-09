@@ -88,7 +88,7 @@
                                       <div class = "col-md-4">
                                         <div class = "form-group" id = "image">
                                           <label for = "image_select">Select Preview</label>
-                                          <input type = "image" id = "image_select" aria-describedby = "imageHelp" src = "https://images.unsplash.com/photo-1487088678257-3a541e6e3922?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3774&q=80" width = "200" />
+                                          <input type = "image" id = "image_select" onclick = "select_image();" aria-describedby = "imageHelp" src = "https://images.unsplash.com/photo-1487088678257-3a541e6e3922?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3774&q=80" width = "200" />
                                           <small id = "imageHelp" class = "form-text text-muted">Select a preview image for the NFT.</small>
                                         </div>
                                         <div class = "form-group" id = "media">
@@ -98,6 +98,17 @@
                                         </div>
                                       </div>
                                     </div>
+                                    <hr/>
+                                    <div class="form-group" id = "cur-title">
+                                      <label for="nft_title">NFT Title</label>
+                                      <input type="text" class="form-control" id="nft_title" aria-describedby="titleHelp" placeholder="A Fancy Title">
+                                      <small id="titleHelp" class="form-text text-muted">Choose a title for this NFT.</small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="nft_description">NFT Description</label>
+                                        <textarea class="form-control" id="nft_description" rows="3" placeholder = "Plain Text or Markdown Description"></textarea>
+                                    </div>
+                                    <hr/>
                                     <div class="form-check">
                                       <input type="checkbox" class="form-check-input" id="termsCheck">
                                       <label class="form-check-label text-white" for="termsCheck">I agree to all <a href = "terms.php">terms and conditions</a>.</label>

@@ -3,6 +3,28 @@
 var cur_nft_addr = "TFhqHsExxjeDuz931Sw8dhA9QdZEuPGe9A";
 var minimum_backing = 0;
 
+// Source: https://web.dev/read-files/
+function readFile(file, onLoad) {
+  const reader = new FileReader();
+  reader.addEventListener('load', (event) => {
+    const result = event.target.result;
+    onLoad(result);
+  });
+
+  reader.addEventListener('progress', (event) => {
+    if (event.loaded && event.total) {
+      const percent = (event.loaded / event.total) * 100;
+      console.log(`Progress: ${Math.round(percent)}`);
+    }
+  });
+  reader.readAsDataURL(file);
+}
+
+function select_image() {
+  let img = $("#image_select");
+  img.src = 'data:image/jpeg;base64,' + btoa(image_data);
+}
+
 function pull_nft_info() {
   if (!$("#termsCheck").prop("checked")) throw new Error("nft-check-tos");
   let nft_data = [];
@@ -13,6 +35,8 @@ function pull_nft_info() {
   if (!Number.isInteger(nft_data.initial_fracs)) throw new Error("nft-fractions-notint");
   if (nft_data.initial_fracs < 0) throw new Error("nft-fractions-negative");
   nft_data.allow_fractions = $("#moreFrac").prop("checked");
+  nft_data.receiver_address = $("#receiver_address").val();
+  if (!window.tronWeb.utils.isAddress(nft_data.receiver_address)) throw new Error("#nft-invalid-receiver");
   // Still have to handle media stuff
   return nft_data;
 }
@@ -48,14 +72,18 @@ $(document).ready(function() {
     $("#curnft-mint").hide();
   });
 
+  $("#media_select").change(function() {
+    
+  });
+
 	$("#create-nft").click(function() {
 		if (checkConnection()) {
 			var contract = window.tronWeb.contract(cur_nft_abi, cur_nft_addr);
       console.log("Creating NFT");
       try {
         let nft = pull_nft_info();
-        console.log(nft);
-        contract.createNFT(nft.initial_cur, nft.initial_fracs, nft.allow_fractions).send().then(function(res) {
+        // For now it'll just go directly, but a popup that gives all the details of the NFT about to be created and asks for confirmation would be nice
+        contract.createNFT(nft.initial_cur, nft.initial_fracs, nft.allow_fractions, nft.receiver_address).send().then(function(res) {
           console.log(res);
         });
       } catch (err) {
