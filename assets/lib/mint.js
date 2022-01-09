@@ -4,8 +4,7 @@ var cur_nft_addr = "TFhqHsExxjeDuz931Sw8dhA9QdZEuPGe9A";
 var minimum_backing = 0;
 
 function pull_nft_info() {
-  console.log($("#termsCheck").prop("checked"));
-  if (!$("#termsCheck").checked) throw new Error("nft-check-tos");
+  if (!$("#termsCheck").prop("checked")) throw new Error("nft-check-tos");
   let nft_data = [];
   nft_data.initial_cur = Number($("#initial_backing").val());
   if (!nft.initial_cur.isInteger()) throw new Error("nft-backing-notint");
