@@ -43,10 +43,10 @@ $(document).ready(function() {
       try {
         let nft = pull_nft_info();
         contract.createNFT(nft.initial_backing, nft.initial_fracs, nft.allow_fractions).call().then(function(res) {
-          
+          console.log(res);
         });
       } catch (err) {
-
+        console.log(err);
       }
     }
   });
