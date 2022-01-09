@@ -103,7 +103,7 @@
                                       <label class="form-check-label text-white" for="termsCheck">I agree to all <a href = "terms.php">terms and conditions</a>.</label>
                                     </div>
                                     <hr/>
-                                    <button type="submit" id = "create-nft" class="btn btn-primary">Create NFT</button>
+                                    <button type="button" id = "create-nft" class="btn btn-primary">Create NFT</button>
                                   </form>
                                   <form id = "cmdtitle-mint">
                                   </form>
