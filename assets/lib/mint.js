@@ -7,6 +7,7 @@ function pull_nft_info() {
   if (!$("#termsCheck").prop("checked")) throw new Error("nft-check-tos");
   let nft_data = [];
   nft_data.initial_cur = Number($("#initial_backing").val());
+  console.log(nft_data.initial_cur);
   if (!nft_data.initial_cur.isInteger()) throw new Error("nft-backing-notint");
   if (nft_data.initial_cur < minimum_backing) throw new Error("nft-insufficient-backing");
   nft_data.initial_fracs = Number($("#initial_fractions").val());
