@@ -27,6 +27,9 @@ $(document).ready(function() {
 	  }
 	  return true;
 	}
+  if (checkConnection()) {
+    $("#receiver_address").value = window.tronWeb.defaultAddress;
+  }
   // Choose which UI to have visible: will eventually be replaced with a dynamic function when projects can be added on the fly
   $("#proj-select-curnft").click(function () {
     $("#curnft-mint").show();
