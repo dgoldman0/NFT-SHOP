@@ -4,6 +4,7 @@ var cur_nft_addr = "TFhqHsExxjeDuz931Sw8dhA9QdZEuPGe9A";
 var minimum_backing = 0;
 
 // Source: https://web.dev/read-files/
+// Need to do this differently for the preview image and the main - and I want to include a progress bar when loading a large media file
 function readFile(file, onLoad) {
   const reader = new FileReader();
   reader.addEventListener('load', (event) => {
@@ -73,7 +74,13 @@ $(document).ready(function() {
   });
 
   $("#media_select").change(function() {
-    
+    let files = $("#media_select").files;
+    let file = files.item(0);
+    if (file != null) {
+      console.log(file);
+      readFile(file);
+    } else {
+    }
   });
 
 	$("#create-nft").click(function() {
@@ -85,6 +92,8 @@ $(document).ready(function() {
         // For now it'll just go directly, but a popup that gives all the details of the NFT about to be created and asks for confirmation would be nice
         contract.createNFT(nft.initial_cur, nft.initial_fracs, nft.allow_fractions, nft.receiver_address).send().then(function(res) {
           console.log(res);
+
+          // Next step is to generate the json data and upload preview image and media
         });
       } catch (err) {
         console.log(err);
