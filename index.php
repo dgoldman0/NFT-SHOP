@@ -65,7 +65,7 @@
                                         <!-- See if I can alter this to make a nice list -->
                                           <div class="row clearfix">
                                             <div class="col-lg-4 col-md-6 col-sm-12">
-                                                <div class="nftcard card">
+                                                <div class="card nftcard">
                                                     <div class="file">
                                                         <a href="javascript:void(0);">
                                                             <div class="hover">
