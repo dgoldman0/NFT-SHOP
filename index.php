@@ -77,8 +77,8 @@
                                                               <center><img src = "https://images.unsplash.com/photo-1487088678257-3a541e6e3922?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3774&q=80" width = "100"/></center>
                                                             </div>
                                                             <div class="file-name">
-                                                                <p class="m-b-5 text-muted">My NFT1</p>
-                                                                <small>Fractions: 1000 <span class="date text-muted">Dec 15, 2017</span></small>
+                                                                <p class="m-b-5 text-white">My NFT1</p>
+                                                                <small>Fractions: 1000</small>
                                                             </div>
                                                         </a>
                                                     </div>
@@ -97,8 +97,8 @@
                                                               <center><img src = "https://images.unsplash.com/photo-1487088678257-3a541e6e3922?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3774&q=80" width = "100"/></center>
                                                             </div>
                                                             <div class="file-name">
-                                                              <p class="m-b-5 text-muted">My NFT2</p>
-                                                              <small>Fractions: 1000 <span class="date text-muted">Dec 15, 2017</span></small>
+                                                              <p class="m-b-5 text-white">My NFT2</p>
+                                                              <small>Fractions: 1000</small>
                                                             </div>
                                                         </a>
                                                     </div>
@@ -117,8 +117,8 @@
                                                               <center><img src = "https://images.unsplash.com/photo-1487088678257-3a541e6e3922?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3774&q=80" width = "100"/></center>
                                                             </div>
                                                             <div class="file-name">
-                                                              <p class="m-b-5 text-muted">My NFT3</p>
-                                                              <small>Fractions: 1000 <span class="date text-muted">Dec 15, 2017</span></small>
+                                                              <p class="m-b-5 text-white">My NFT3</p>
+                                                              <small>Fractions: 1000</small>
                                                             </div>
                                                         </a>
                                                     </div>
@@ -137,8 +137,8 @@
                                                               <img src = "https://images.unsplash.com/photo-1487088678257-3a541e6e3922?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3774&q=80" width = "100"/>
                                                             </div>
                                                             <div class="file-name">
-                                                              <p class="m-b-5 text-muted">My NFT4</p>
-                                                              <small>Fractions: 1000 <span class="date text-muted">Dec 15, 2017</span></small>
+                                                              <p class="m-b-5 text-white">My NFT4</p>
+                                                              <small>Fractions: 1000</small>
                                                             </div>
                                                         </a>
                                                     </div>
