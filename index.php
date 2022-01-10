@@ -64,7 +64,7 @@
                                       <div class="container">
                                         <!-- See if I can alter this to make a nice list -->
                                           <div class="row clearfix">
-                                            <div class="col-lg-3 col-md-4 col-sm-12">
+                                            <div class="col-lg-4 col-md-6 col-sm-12">
                                                 <div class="card nftcard">
                                                     <div class="file">
                                                         <a href="javascript:void(0);">
@@ -84,7 +84,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-3 col-md-4 col-sm-12">
+                                            <div class="col-lg-4 col-md-6 col-sm-12">
                                                 <div class="card nftcard">
                                                     <div class="file">
                                                         <a href="javascript:void(0);">
@@ -104,7 +104,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-3 col-md-4 col-sm-12">
+                                            <div class="col-lg-4 col-md-6 col-sm-12">
                                                 <div class="card nftcard">
                                                     <div class="file">
                                                         <a href="javascript:void(0);">
@@ -124,7 +124,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-3 col-md-4 col-sm-12">
+                                            <div class="col-lg-4 col-md-6 col-sm-12">
                                                 <div class="card nftcard">
                                                     <div class="file">
                                                         <a href="javascript:void(0);">
