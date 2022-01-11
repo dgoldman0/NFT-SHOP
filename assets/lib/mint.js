@@ -78,6 +78,18 @@ $(document).ready(function() {
     $("#curnft-mint").hide();
   });
 
+  $("#image_select").change(function() {
+    let files = $("#image_select").files;
+    let file = files.item(0);
+    if (file != null) {
+      console.log(file);
+      readFile(file, function(res) {
+
+      });
+    } else {
+    }
+  });
+
   $("#media_select").change(function() {
     let files = $("#media_select").files;
     let file = files.item(0);
