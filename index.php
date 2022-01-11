@@ -159,8 +159,7 @@
         <script src="assets/js/popper.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/tronweb.js"></script>
-        <script src="assets/js/frac_nft.js"></script>
-        <script src="assets/js/titles.js"></script>
+        <script src="assets/js/view.js"></script>
 
         <!-- Dapp Scripts -->
     </body>

@@ -44,6 +44,11 @@ function pull_nft_info() {
 
 $(document).ready(function() {
   // Prevent form submission via enter, etc.
+  $("#image_select").click(function(e){
+   e.preventDefault();
+   // Call file select and load image
+   $('#image_file').trigger('click');
+  });
   $(window).keydown(function(event){
     if(event.keyCode == 13 || event.keyCode == 32) {
       // Will adjust to allow submission if all form elements are valid

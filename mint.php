@@ -88,7 +88,7 @@
                                       <div class = "col-md-4">
                                         <div class = "form-group" id = "image">
                                           <label for = "image_select">Select Preview</label>
-                                          <input type = "image" id = "image_select" onclick = "select_image();" aria-describedby = "imageHelp" src = "https://images.unsplash.com/photo-1487088678257-3a541e6e3922?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3774&q=80" width = "200" />
+                                          <input type = "image" id = "image_select" aria-describedby = "imageHelp" src = "https://images.unsplash.com/photo-1487088678257-3a541e6e3922?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3774&q=80" width = "200" />
                                           <small id = "imageHelp" class = "form-text text-muted">Select a preview image for the NFT.</small>
                                         </div>
                                         <div class = "form-group" id = "media">
@@ -96,6 +96,7 @@
                                           <input type = "file" id = "media_select" aria-describedby = "mediaHelp" />
                                           <small id = "mediaHelp" class = "form-text text-muted">Select the media to be certified by the NFT (if different from preview image).</small>
                                         </div>
+                                        <input id="image_file" type="file" style="display: none;" />
                                       </div>
                                     </div>
                                     <hr/>
