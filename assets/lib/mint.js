@@ -79,7 +79,7 @@ $(document).ready(function() {
   });
 
   $("#image_file").change(function() {
-    let file = $("#image_file").files[0];
+    let file = $("#image_file")[0].files[0];
     if (file != null) {
       console.log(file);
       readFile(file, function(res) {
@@ -90,7 +90,7 @@ $(document).ready(function() {
   });
 
   $("#media_select").change(function() {
-    let file = $("#media_select").files[0];
+    let file = $("#media_select")[0].files[0];
     if (file != null) {
       console.log(file);
       readFile(file);
