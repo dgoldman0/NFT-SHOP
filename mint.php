@@ -96,7 +96,7 @@
                                           <input type = "file" id = "media_select" aria-describedby = "mediaHelp" />
                                           <small id = "mediaHelp" class = "form-text text-muted">Select the media to be certified by the NFT (if different from preview image).</small>
                                         </div>
-                                        <input id="image_file" type="file" style="display: none;" />
+                                        <input id="image_file" type="file" accept = "image/*" style="display: none;" />
                                       </div>
                                     </div>
                                     <hr/>
