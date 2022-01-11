@@ -83,9 +83,7 @@ $(document).ready(function() {
     if (file != null) {
       console.log(file);
       readFile(file, function(res) {
-        console.log(res);
-        $("image_select").attr("src", res);
-        console.log($("image_select").attr("src"));
+        $("#image_select").attr("src", res);
       });
     } else {
     }
