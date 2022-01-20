@@ -132,7 +132,6 @@
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/popper.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
-        <script src="assets/js/tronweb.js"></script>
         <script src="assets/lib/mint.js"></script>
         <script src="assets/lib/abi.js"></script>
         <!-- Dapp Scripts -->

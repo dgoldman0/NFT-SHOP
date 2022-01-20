@@ -16,7 +16,7 @@
                     -->
                 </li>
                 <li class="nav-item"><a class="nav-link" href="index.php"><i class="fas fa-photo-video text-white"></i> Collection</a></li>
-                <li class="nav-item"><a class="nav-link" href="mint.php"><i class="fas fa-fire-alt text-white"></i> Mint NFT</a></li>
+                <!--<li class="nav-item"><a class="nav-link" href="mint.php"><i class="fas fa-fire-alt text-white"></i> Mint NFT</a></li>-->
             </ul>
 
             <ul class="navbar-nav ml-auto">
